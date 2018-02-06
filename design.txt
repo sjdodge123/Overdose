@@ -1,0 +1,48 @@
+
+Core
+- 2d Platformer
+- Two Dimensions overlaying the same space. Both will always exist on the board, yet be transparent depending on your drug usage level.
+  - Light world 
+      - No enemies, but platforms and walls block your travel
+  - Dark world (inverse color scheme)
+    - Drug use allows the player to see the dark world
+    - Enemies always exist in dark world, but when you phase in they see/interact with you  
+- Basic puzzles require player to enter dark world to progress in light world
+- Drug object in game needs to be collected and used to enter dark world
+ - The more it is used the more the player is "phased" into the dark world
+
+Player
+- Using drug has negative effect on light world health
+  - Staying in the dark world too long will cause the player to be stuck there
+  
+- Two health bars inversely related
+  - Health (your character's health in the light world)
+  - Tolerance (your character's health in the dark world)
+- WASD move
+- Spacebar jump
+  - Light world can double jump
+  - Dark world single jump
+- Left click use health?
+- Right click use drug?
+
+Enemies
+ - When an enemy hits you, it simply applies more of the drug which keeps you phased longer
+ - Floating enemies that just charge straight at you and chase you when you are above a threshold in the darkworld
+ - Ranged Enemies that stand still and fire needles
+ - Hands pulling downward ( grab and force you to keep clicking until broken free.. Longer you are held the more drug is activated )
+ 
+ Hazards
+ - Pit falls that are full of dark world enemies(hands)
+ - Tall Walls requiring the player to double jump between hands hanging from wall
+ 
+ Items
+ - Drug ( increase your visbility to dark world, decreases light )
+ - Health kit ( increase your visbility to light world, decreases dark )
+ 
+ Puzzles
+ - Balancing your tolerence and health to stay alive while navigating jump puzzles
+ - Learn to get hit by dark world enemies to enter the dark world, defeat them and cross an area otherwise impassable in the light world
+ - Take drug enough to get through light world obstacle then use health to get back to cross dangerous path of enemies
+
+Art Style 
+- Basic shapes in Javascript canvas
